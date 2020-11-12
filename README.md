@@ -21,11 +21,6 @@ Your choice is: Stone
 Enemy choise is: Stone
 Draw
 ################################################################################
-
-                   Hello this is a stone paper scissors game
-                              Press Ctrl-C to exit
-
-################################################################################
 Choose Stone = [a] Paper = [s] Scissors = [d] :
 
 ```

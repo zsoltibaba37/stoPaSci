@@ -21,6 +21,5 @@ Your choice is: Stone
 Enemy choise is: Stone
 Draw
 ################################################################################
-Choose Stone = [a] Paper = [s] Scissors = [d] :
-
+                           Press enter to continue...
 ```

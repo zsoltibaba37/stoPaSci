@@ -2,6 +2,8 @@
 # -*- coding: UTF-8 -*-
 
 import os, sys
+from os import system
+from sys import platform
 import random
 from termcolor import cprint
 
@@ -35,10 +37,20 @@ def string_check(question):
             y = False
     return s
 
+def clearscreen():
+    """
+    Check OS and setting the right method.
+    """
+    if platform == "linux" or platform == "linux2":
+        system('clear')
+    elif platform == "win32":
+        system('cls')
+
+
 """ ------ MAIN ------ """
 def main():
     while True:
-        
+        clearscreen()        
         cprint("#" * 80)
         cprint("")
         cprint("Hello this is a stone paper scissors game".center(80))
@@ -89,6 +101,9 @@ def main():
         if e == "d" and my == "s":
             cprint("You Lost", 'red')
 
+
+        cprint("#" * 80)
+        input("Press enter to continue...".center(80))
 
 if __name__ == '__main__':
     try:
